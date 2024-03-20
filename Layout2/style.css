@@ -4,34 +4,41 @@ body {
 }
 
 header, nav, main, footer, aside {
-    background-color: cornflowerblue;
     margin: 10px;
     text-align: center;
-    font-size: 2rem;
     padding: 20px;
 }
 
-@media only screen and (max-width: 600px) {
-
-header{
+header {
     height: 40px;
+    background-color:#bed3c3 ;
 }
 
 nav {
     height: 20px;
+    background-color: #4a919e;
 }
 
 aside {
-    display: block; 
-    width: calc(50% - 20px); 
+    display: block;
     height: 500px;
-    box-sizing: border-box; 
-    float: left;
-    float: right;
-    background-color: pink;
+    box-sizing: border-box;
+    background-color: #e3adca;
 }
 
 footer {
     clear: both;
+    background-color: #212e53;
 }
+
+@media only screen and (min-width: 767px) {
+    aside {
+        width: calc(50% - 20px); 
+        float: left; 
+    }
+
+    main {
+        width: calc(50% - 20px);
+        float: right; 
+    }
 }
